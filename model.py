@@ -2,6 +2,13 @@ import nltk
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
+df1=pd.read_csv('stopwords')
+b=[]
+def func(df1):
+    for i in df1['words']:
+        b.append(i)
+ func(df1)       
+           
 from nltk.corpus import stopwords
 import string
 df = pd.read_csv('emails.csv')
@@ -27,7 +34,7 @@ def text_process(mess):
     nopunc = ''.join(nopunc)
 
     # Now just remove any stopwords
-    return [word for word in nopunc.split() if word.lower() not in stopwords.words('english')]
+    return [word for word in nopunc.split() if word.lower() not in b]
 #messages['message'].head(5).apply(text_process)
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
