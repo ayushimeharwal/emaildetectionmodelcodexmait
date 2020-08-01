@@ -8,8 +8,6 @@ def func(df1):
     for i in df1['words']:
         b.append(i)
  func(df1)       
-           
-from nltk.corpus import stopwords
 import string
 df = pd.read_csv('emails.csv')
 def func(a):
