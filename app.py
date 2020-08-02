@@ -69,7 +69,7 @@ def main():
     if status == 'Model 1':
         st.sidebar.info('Model 1 Is Made By using Naive Bayes classifier And Has Testing Accuracy of 0.978')
     html_temp = """
-               <div style="background-color:#025246 ;padding:10px">
+               <div style="background-color:#00FF00 ;padding:10px">
                <h1 style="color:white;text-align:center;">EMAIL DETECTION MODEL</h1>
                </div>
                """
